@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Norse-Bold'; /* Choose a name for your font */
+    src: url('fonts/Norse-Bold.otf') format('opentype'); /* Path to your font file */
+}
+h1 {
+    color: white;
+    align-self: center;
+    font-family: 'Norse-Bold', sans-serif;
+    font-size: 8em;
+}
+.container {
+    display: flex; /* Use flexbox for layout */
+    min-height: 100vh;
+}
+
+.left {
+    position: relative; /* Establishes a positioning context for the overlay */
+    width: 35%; /* Left div takes up 35% of the page width */
+    min-height: 100vh;
+}
+
+.image {
+    width: 100%; /* Image takes up the full width of the left div */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.overlay {
+    position: absolute; /* Position the overlay absolutely within the left div */
+    top: 10%; /* Align to the top */
+    width: 100%; /* Full width of the left div */
+    height: 15%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex; /* Use flexbox to center the logo */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.logo {
+    display: flex;
+    height: 100%;
+    padding: 2%;
+    aspect-ratio: 1/1;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: antiquewhite;
+    width: 65%; /* Right div takes up the remaining 65% of the page width */
+}
+.caption {
+    font-size: 2.5rem;
+}
+form {
+    background-color: white;
+}
+caption {
+    font-size: 2.5rem;
+}
+
+.button {
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+}
+
+.button:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-1.2px);
+}
+

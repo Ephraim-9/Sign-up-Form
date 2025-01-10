@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="images/bg.jpg" alt="background" class="image">
+            <div class="overlay">
+                <div class="logo">
+                    <img src="images/odin-lined.png" alt="odin-lined" class="odin">
+                    <h1>ODIN</h1>
+                </div>
+                <!-- <div class="logo"></div>     -->
+            </div>
+        </div>
+        <div class="right">
+            <div class="caption">
+                <div class="long">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</div>
+                <div class="short">You <em>know</em> you want to.</div>
+            </div>
+            <form action="get">
+                <p>
+                    <caption>Let's do this!</caption>
+                </p>
+                <p class="name">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" id="first_name">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" id="last_name">
+                </p>
+                <p class="contact">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="number" id="phone">
+                </p>
+                <p class="password">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password">
+                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm_password">
+                </p>
+            </form>
+            <button class="button" role="button">Create Account</button>
+            <div class="login">Already have an account? <a href="login">Log in</a></div>
+        </div>
+    </div>
+</body>
+</html>
